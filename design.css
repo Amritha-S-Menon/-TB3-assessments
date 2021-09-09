@@ -11,7 +11,12 @@ body {
   text-align: center;
   font-family: "Helvetica", sans-serif ;
 }
-
+h2{
+  color: #000000;
+}
+p{
+  color: #3C3C3C;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -110,7 +115,20 @@ section{
   background-color: #F4F7FA;
   margin: 10px;
 }
+.col h2{
+  color: #8EE5D1;
+}
+
 #footers{
   background-color: #F4F7FA;
   display:flex;
+}
+ 
+@media screen and (max-width:640px){
+  nav #links #secondlink,nav #links #thirdlink, nav #links #fourthlink{
+    display: none;
+  }
+  section {
+    flex-direction: column;
+  }
 }
